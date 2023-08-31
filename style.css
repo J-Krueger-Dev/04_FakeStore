@@ -9,3 +9,20 @@ body {
 nav {
   width: 100vw;
 }
+
+#display{
+  text-align: center;
+  margin-top: 25px;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+}

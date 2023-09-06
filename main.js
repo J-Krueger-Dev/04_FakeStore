@@ -9,11 +9,19 @@ const fakeStore = async (endpoint) =>{
   let result = await fetch(fakeStoreAPI + endpoint);
   let storeData = await result.json();
   console.log(storeData);
+  displayCards(storeData)
 }
-/* fakeStore('jewelery')
-fakeStore('electronics')
-fakeStore(`men's clothing`)
-fakeStore(`women's clothing`) */
+
+function displayCards(){
+  // CREATE NEW ELEMENTS
+/* 
+  1. crete the new empty element
+  2. edit that element
+    -adding text
+    -changing styling
+  3. add the element to the web page
+*/
+}
 
 navbarElectronics.addEventListener('click', () =>{
   fakeStore('electronics')
@@ -30,9 +38,9 @@ navbarWomen.addEventListener('click', () =>{
 
 
 window.onload = (event) =>{
-  fakeStore('jewelery')
   fakeStore('electronics')
+  fakeStore('jewelery')
   fakeStore(`men's clothing`)
   fakeStore(`women's clothing`)
 };
-
+// products?sort=asc //!maybe use this//// url + `/category/jewelery?sort=asc`
